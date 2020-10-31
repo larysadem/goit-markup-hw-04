@@ -116,15 +116,14 @@ body {
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
-  /* --color1: var(--primary-text-color); */
   display: flex;
   align-items: center;
 }
 
-/* .contacts-link:hover {
-  color: var(--accent-color);
-  --color1: var(--accent-color);
-} */
+.contacts-link:hover,
+.contacts-link:focus {
+  --color3: var(--accent-color);
+}
 
 .icon-contacts {
   margin-right: 10px;
