@@ -142,7 +142,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/studio/hero.jpg);
+    url(/images/studio/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,7 +229,10 @@ img {
   width: calc((100% - 90px) / 4);
 }
 
-.features-list .item:not(:last-child) {
+.features-list .item:not(:last-child),
+.work-list .item:not(:last-child),
+.team-list .item:not(:last-child),
+.clients-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -268,20 +271,12 @@ img {
   display: flex;
 }
 
-.work-list .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team {
   background-color: var(--bg-team);
 }
 
 .team-list {
   display: flex;
-}
-
-.team-list .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-list > li {
@@ -350,10 +345,6 @@ img {
 
 .clients-list {
   display: flex;
-}
-
-.clients-list .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-link {
