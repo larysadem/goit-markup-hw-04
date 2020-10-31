@@ -106,12 +106,27 @@ body {
   display: flex;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
 .contacts-link {
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
   display: inline-block;
+  text-align: center;
+}
+
+.icon-contacts {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-contacts:hover {
+  fill: currentColor;
 }
 
 .hero {
@@ -222,6 +237,17 @@ img {
   margin-right: 30px;
 }
 
+.icon-features {
+  height: 120px;
+  background-color: var(--bg-team);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .features .subtitle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -262,7 +288,7 @@ img {
   margin-right: 30px;
 }
 
-.team li {
+.team-list > li {
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -282,7 +308,7 @@ img {
 
 .team .text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   font-weight: normal;
   font-size: 16px;
@@ -295,6 +321,39 @@ img {
   padding-bottom: 30px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-network:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  --color4: #afb1b8;
+  background-color: inherit;
+}
+.social-link:hover,
+.social-link:focus {
+  --color4: var(--white);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* .icon {
+  --color1: var(--title-text-color);
+  --color2: var(--accent-color);
+  --color3: var(--primary-text-color);
+  --color4: #afb1b8;
+} */
+
 .list {
   list-style: none;
   padding: 0;
@@ -305,9 +364,22 @@ img {
   background-color: var(--bg-main);
   padding-top: 60px;
   padding-bottom: 60px;
+  height: 252px;
 
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-nav {
+  margin-right: 70px;
+}
+
+.footer-nav {
+  /* width: 231px; */
 }
 
 .footer .logo {
@@ -319,7 +391,7 @@ img {
   width: 231px;
 }
 
-.footer li:not(:last-child) {
+.footer-nav li:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -333,9 +405,28 @@ img {
   display: inline-block;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
+.footer .text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer .social-link {
+  --color4: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover,
+.footer .social-link:focus {
+  --color4: var(--white);
+  background-color: var(--accent-color);
+}
+
+.footer .icon-social {
 }
 
 .filter {
@@ -371,6 +462,7 @@ img {
 .filter:focus {
   color: var(--white);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .product-list {
