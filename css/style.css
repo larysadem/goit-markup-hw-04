@@ -112,7 +112,7 @@ body {
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -324,7 +324,7 @@ img {
 .social-link {
   width: 44px;
   height: 44px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -353,7 +353,7 @@ img {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
 
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
